@@ -9,6 +9,10 @@ public class Coordinates {
         this.second = second;
     }
 
+    public static Coordinates of(int first, int second) {
+        return new Coordinates(first, second);
+    }
+
     public Integer getX() {
         return first;
     }

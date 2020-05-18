@@ -45,7 +45,7 @@ public class WordFinder {
         }
         if (matrix[i][j] == word.charAt(index)) {
             if (index == word.length() - 1) {
-                list.add(new Coordinates(i, j));
+                list.add(Coordinates.of(i, j));
                 return true;
             } else if (search(matrix, word, i + 1, j, index + 1, list)
                     || search(matrix, word, i - 1, j, index + 1, list)
