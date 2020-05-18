@@ -51,7 +51,7 @@ public class WordFinder {
                     || search(matrix, word, i - 1, j, index + 1, list)
                     || search(matrix, word, i, j + 1, index + 1, list)
                     || search(matrix, word, i, j - 1, index + 1, list)) {
-                list.add(new Coordinates(i, j));
+                list.add(Coordinates.of(i, j));
                 return true;
             }
         }
